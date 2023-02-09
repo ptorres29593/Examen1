@@ -11,6 +11,30 @@
 
 using namespace std;
 
+int numMayor(int,int,int);
+int numMenor(int,int,int);
+
+int numMayor(int n1, int n2, int n3){
+    if (n1 > n2 && n1 > n3){
+        return n1;
+    }else if (n2 > n1 && n2 > n3){
+        return n2;
+    }else {
+        return n3;
+    }
+}
+
+int numMenor(int n1, int n2, int n3){
+    if (n1 < n2 && n1 < n3){
+        return n1;
+    }else if (n2 < n1 && n2 < n3){
+        return n2;
+    }else {
+        return n3;
+    }
+}
+
+
 int main()
 {
     
@@ -27,23 +51,9 @@ int main()
     cout<<"Numero 3: ";
     cin>>num3;
 
-    if (num1 > num2 && num1 > num3){
-    	cout<<"El número mayor es el numero "<<num1<<endl;
-    }else if (num2 > num1 && num2 > num3){
-    	cout<<"El número mayor es el numero "<<num2<<endl;
-    }else {
-    	cout<<"El número mayor es el numero "<<num3<<endl;
-    }
-
-
-    if (num1 < num2 && num1 < num3){
-    	cout<<"El número menor es el numero "<<num1<<endl;
-    }else if (num2 < num1 && num2 < num3){
-    	cout<<"El número menor es el numero "<<num2<<endl;
-    }else {
-    	cout<<"El número menor es el numero "<<num3<<endl;
-    }
-
+    cout<<"El número mayor es el numero "<<numMayor(num1,num2,num3)<<endl;
+    cout<<"El número menor es el numero "<<numMenor(num1,num2,num3)<<endl;
+    
     return 0;
 }
 
