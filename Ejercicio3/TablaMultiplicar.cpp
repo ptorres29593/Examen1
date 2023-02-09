@@ -8,12 +8,26 @@
 #include <iostream>
 
 using namespace std;
+void mostrarTabla(int);
+
+void mostrarTabla(int mult){
+    int resultado;
+
+    for (int i=1; i<=10; i++) {
+        
+        resultado=mult*i;
+        cout<<mult<<" X "<<i<<" = "<<resultado<<" ";
+        
+        if ((i%2)==0){
+            cout<<endl;
+        }
+    }
+}
 
 int main()
 {
     
     int multiplo;
-    int resultado;
 
     cout<<"Programa que te indica la tabla de multiplicar del numero deseado"<<endl;
 
@@ -21,10 +35,7 @@ int main()
     cout<<"--";
     cin>>multiplo;
 
-    for (int i=0; i<=10; i++) {
-    	resultado=multiplo*i;
-    	cout<<multiplo<<" X "<<i<<" = "<<resultado<<endl;
-    }
-    
+    mostrarTabla(multiplo);
+
     return 0;
 }
