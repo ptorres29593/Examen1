@@ -14,6 +14,14 @@ using namespace std;
 int numMayor(int,int,int);
 int numMenor(int,int,int);
 
+/**
+* @brief La siguiente funcion da el numero mayor de los 3 que se estan dando por medio de una cadena de if else
+* @param numero entero
+* @param numero entero
+* @param numero entero
+* @returns El parametro cuyo valor sea mayor
+*/
+
 int numMayor(int n1, int n2, int n3){
     if (n1 > n2 && n1 > n3){
         return n1;
@@ -23,6 +31,14 @@ int numMayor(int n1, int n2, int n3){
         return n3;
     }
 }
+
+/**
+* @brief La siguiente funcion da el numero menor de los 3 que se estan dando por medio de una cadena de if else
+* @param numero entero
+* @param numero entero
+* @param numero entero
+* @returns El parametro cuyo valor sea menor
+*/
 
 int numMenor(int n1, int n2, int n3){
     if (n1 < n2 && n1 < n3){
@@ -34,6 +50,10 @@ int numMenor(int n1, int n2, int n3){
     }
 }
 
+
+/**
+* @brief La siguiente funcion es la funcion principal y lo que hace es pedirle datos al usuario y mostrar resultados
+*/
 
 int main()
 {
