@@ -9,11 +9,28 @@
 
 using namespace std;
 
+int anioActual=2023;
+int mesActual=2;
+int diaActual=9;
+
+int calcEdad(int,int,int);
+
+int calcEdad(int d, int m, int y){
+
+    int edad;
+
+     if (m<=mesActual && d<=diaActual){
+        edad = anioActual - y;
+    }else {
+        edad = anioActual - y - 1;
+    }
+
+    return edad;
+
+}
+
 int main()
 {
-    int anioActual=2023;
-    int mesActual=2;
-    int diaActual=9;
 
     int anio;
     int mes;
@@ -30,13 +47,7 @@ int main()
     cout<<"Año: ";
     cin>>anio;
 
-    if (mes<=mesActual && dia<=diaActual){
-    	edad = anioActual - anio;
-    }else {
-    	edad = anioActual - anio - 1;
-    }
-
-    cout<<"Tu edad es de "<<edad<<" años"<<endl;
+    cout<<"Tu edad es de "<<calcEdad(dia,mes,anio)<<" años"<<endl;
 
     return 0;
 }
