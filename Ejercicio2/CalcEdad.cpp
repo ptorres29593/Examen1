@@ -15,6 +15,14 @@ int diaActual=9;
 
 int calcEdad(int,int,int);
 
+/**
+* @brief La siguiente funcion calcula la edad dandole el dia, mes y año haciendo uso de un if else para evaluar si ya fue su cumpleaños
+* @param numero entero
+* @param numero entero
+* @param numero entero
+* @returns La edad de la persona
+*/
+
 int calcEdad(int d, int m, int y){
 
     int edad;
