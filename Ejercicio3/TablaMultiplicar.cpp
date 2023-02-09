@@ -10,6 +10,12 @@
 using namespace std;
 void mostrarTabla(int);
 
+/**
+* @brief La siguiente funcion muestra la tabla de multiplicar hasta el 10 de cualquier número
+* @param numero entero
+* @returns muestra solo en consola y no devuelve ningun valor
+*/
+
 void mostrarTabla(int mult){
     int resultado;
 
